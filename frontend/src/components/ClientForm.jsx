@@ -68,7 +68,7 @@ const ClientForm = () => {
       <h1>Create Client</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="firstName">Name:</label>
+          <label htmlFor="firstName">Name</label>
           <br />
           <input
             disabled={false}
@@ -81,7 +81,7 @@ const ClientForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="lastName">Last Name:</label>
+          <label htmlFor="lastName">Last Name</label>
           <br />
           <input
             type="text"
@@ -92,7 +92,7 @@ const ClientForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email</label>
           <br />
           <input
             type="email"
@@ -103,7 +103,7 @@ const ClientForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="mobileNumber">Mobile Number:</label>
+          <label htmlFor="mobileNumber">Mobile Number</label>
           <br />
           <input
             type="text"
@@ -114,7 +114,7 @@ const ClientForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="project">Project:</label>
+          <label htmlFor="project">Project</label>
           <br />
           <input
             type="text"
@@ -124,7 +124,7 @@ const ClientForm = () => {
             onChange={handleChange}
           />
         </div>
-        <button type="submit">
+        <button type="submit" className="create-update-client">
           {formButtonText ? "Create Client" : "Update Client"}
         </button>
       </form>

@@ -72,15 +72,18 @@ const ClientTable = () => {
                 <td>
                   <button
                     type="button"
+                    className="edit-button"
                     onClick={() => handleUpdateClient(clientDetails._id)}
                   >
-                    edit
-                  </button>
+                    Edit
+                  </button>{" "}
+                  |{" "}
                   <button
                     type="button"
+                    className="delete-button"
                     onClick={() => handleDeleteClient(clientDetails._id)}
                   >
-                    delete
+                    Delete
                   </button>
                 </td>
               </tr>

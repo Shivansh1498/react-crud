@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
 nav {
   display: flex;
   align-items: center;
   height: 56px;
-  background-color: black;
+  background-color: #353a3f;
   color: white;
   padding-inline: 20px;
 }
@@ -29,16 +36,46 @@ nav p {
   overflow-x: auto;
 }
 
+.client-table-container .edit-button,
+.client-table-container .delete-button {
+  all: unset;
+  color: #1f31b9e3;
+}
+
 .client-form-container {
   flex: 1;
+}
+
+.client-form-container input {
+  width: 70%;
+  padding: 5px 10px;
+  border: 1px solid #0000003b;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.client-form-container .create-update-client {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #317cf6;
+  padding: 10px 20px;
 }
 
 table,
 th,
 td {
-  border: 1px solid black;
+  border-bottom: 1px solid #0000003b;
   border-collapse: collapse;
   padding: 10px 15px;
+}
+
+table th {
+  background-color: #eaecef;
+}
+table th:last-child {
+  background-color: transparent;
 }
 
 @media screen and (min-width: 1348px) {
